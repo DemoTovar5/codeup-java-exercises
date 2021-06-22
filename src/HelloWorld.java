@@ -1,7 +1,15 @@
 public class HelloWorld {
 
     public static void main(String[] args){
-          System.out.println("Hello, world!");
+
+//        int myFavoriteNumber = 7;
+        String myString = "Demo";
+//        long myNumber;
+
+        System.out.println(myString);
+
+
+
     }
 
 }
