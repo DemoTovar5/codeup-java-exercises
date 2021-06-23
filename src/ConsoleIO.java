@@ -10,30 +10,37 @@ public class ConsoleIO {
 //        String firstName = sc.next();
 //        System.out.printf("You entered: %s\n", firstName);
 
-//        System.out.println("What month were you born in?");
-//        System.out.println("What day of the month were you born?");
-//
-//        String birthMonth = sc.next();
-//        String birthDay = sc.next();
-//
-//        System.out.printf("You entered: %s\n", birthMonth);
-//        System.out.printf("You entered: %s\n", birthDay);
-//
 //        System.out.println("Enter a number: ");
 //        int myNum = sc.nextInt();
 //        System.out.println(myNum);
 
 //        String myString = sc.nextLine(); // Will give you the ENTIRE line.
 //        System.out.println(myString);
+//
+//        while (sc.hasNext()){
+//            String word = sc.next();
+//            System.out.println(word);
 
-        while (sc.hasNext()){
-            String word = sc.next();
-            System.out.println(word);
+
+
+
+        System.out.println("Please enter a number: ");
+
+        int num = sc.nextInt();
+
+        System.out.printf("Your number was: %d\n", num);
+
+        System.out.println("Please type a sentence: ");
+        sc.nextLine(); // This is the delimitor. It tells the scanner to split it.
+        String sentence = sc.nextLine();
+
+        System.out.println(sentence);
+
+
 
         }
 
     }
-}
 
 //        System.out.println("My name is Demo"); // ln makes the consolelog go to a new line
 //        System.out.println("Here's a new line");
