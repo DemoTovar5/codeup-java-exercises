@@ -132,17 +132,16 @@ public class ControlStatementsAndLoops {
         //TODO: using previous mini exercise,
         // allow the user to input a new username several times until a unique username is entered.
 
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
+//
+//
+//        System.out.println("Please enter a username: ");
+//
+//        String userName = sc.nextLine();
+//
+//        switch (userName)
+//
 
-
-        System.out.println("Please enter a username: ");
-
-        String userName = sc.nextLine();
-
-        switch(userName)
-
-
-
+       }
     }
 
-}
