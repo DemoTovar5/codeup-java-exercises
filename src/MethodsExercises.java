@@ -13,6 +13,7 @@ public class MethodsExercises {
         System.out.println("Subtraction: " + Subtraction(num1, num2));
         System.out.println("Multiplication: " + Multiplication(num1, num2));
         System.out.println("Division: " + Division(num1, num2));
+        System.out.println("Modulus: " + Modulus(num1, num2));
     }
 
     public static int Arithmetic(int a, int b){
@@ -31,7 +32,9 @@ public class MethodsExercises {
      return a - b;
     }
 
-
+    public static int Modulus(int a, int b){
+        return a % b;
+    }
 
 
 
