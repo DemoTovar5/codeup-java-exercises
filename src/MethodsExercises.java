@@ -14,6 +14,10 @@ public class MethodsExercises {
         System.out.println("Multiplication: " + Multiplication(num1, num2));
         System.out.println("Division: " + Division(num1, num2));
         System.out.println("Modulus: " + Modulus(num1, num2));
+
+        int validInput = getInteger(1,10, ;
+
+        System.out.printf("You entered a valid number: %s", validInput);
     }
 
     public static int Arithmetic(int a, int b){
@@ -37,6 +41,20 @@ public class MethodsExercises {
     }
 
 
+
+public static int getInteger(int min, int max, Scanner sc){
+
+        int userInput = 0;
+    System.out.printf("Please enter a number between %s and %s: \n", min, max);
+        Scanner sc = new Scanner(System.in);
+        userInput = sc.nextInt();
+
+        if(userInput > max || userInput < min){
+            getInteger(max,min, Scanner sc);
+        }
+
+        return userInput;
+}
 
 
 
