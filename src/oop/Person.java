@@ -66,5 +66,8 @@ public class Person {
 
 
 
+public String Entertained(String entertainment){
+        return this.name + " is going to go " + entertainment;
+}
 
 }

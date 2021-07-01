@@ -6,8 +6,16 @@ public class ObjectOrientedProgramming {
         Person person = new Person();
 
         person.setName("Demo");
-        System.out.println(person.getName());
+        System.out.println(person.Entertained("Ride Rollercoasters"));
 
+        Person person1 = new Person();
+        person1.setName("Casey");
+        System.out.println(person1.Entertained("Tubing"));
     }
+
+
+
+
+
 
 }
