@@ -1,7 +1,8 @@
 package Company;
 
 abstract class Employee {
-// define the methods
+
+    // define the methods
     private String salary;
     private String name;
 

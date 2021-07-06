@@ -1,5 +1,5 @@
 package shapes;
 
-public class Quadrilateral {
+public class Quadrilateral extends shape {
 
 }
