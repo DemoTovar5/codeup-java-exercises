@@ -1,6 +1,6 @@
 package shapes;
 
-public class square {
+public class square extends Quadrilateral {
 
 
 }

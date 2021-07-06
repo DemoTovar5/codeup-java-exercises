@@ -1,5 +1,5 @@
 package shapes;
 
-public class rectangle {
+public class rectangle extends Quadrilateral implements Measurable {
 
 }
