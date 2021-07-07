@@ -1,6 +1,6 @@
 package shapes;
 
-public class Quadrilateral extends shape implements Measurable {
+abstract class Quadrilateral extends shape implements Measurable {
 
     @Override
     public double getPerimeter() {
