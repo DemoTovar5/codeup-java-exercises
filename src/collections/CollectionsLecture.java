@@ -22,5 +22,7 @@ public class CollectionsLecture {
         stringArr.remove(1);
         System.out.println(System.identityHashCode(stringArr));
 
+
+
     }
 }
