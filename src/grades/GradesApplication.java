@@ -52,7 +52,7 @@ public class GradesApplication {
             }
             System.out.println("Which Student would you like to see more info on?");
             System.out.println("> ");
-            String userInput = input.getString().toLowerCase();
+            String userInput = input.getString();
 
             Student userName = students.get(userInput);
 
