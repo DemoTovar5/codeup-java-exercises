@@ -1,8 +1,7 @@
 public class MainMethod {
     public static void main(String[] args) {
-        testPerson();
 
-
+testPerson();
     }
 
     public static void testPerson(){
