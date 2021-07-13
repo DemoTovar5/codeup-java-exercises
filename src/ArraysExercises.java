@@ -9,34 +9,39 @@ public class ArraysExercises {
         System.out.println(Arrays.toString(numbers));
 //        System.out.println(Arrays.toString(addPerson()));
 
+        Person person1 = new Person("Jon");
+        Person person2 = new Person("Paul");
+        Person person3 = new Person("Ringo");
 
-        Person[] beatles = new Person[3];
+        String[] personArr = {person1.getName(), person2.getName(),person3.getName()};
+        System.out.println(Arrays.toString(personArr));
 
-        beatles[0] = new Person( "Jon");
-        beatles[1] = new Person("Paul");
-        beatles[2] = new Person("Ringo");
+        String[] newArr = addPerson(personArr,"George");
+        System.out.println(Arrays.toString(newArr));
 
-        for (int i = 0; i < beatles.length; i += 1) {
-            System.out.println(beatles[i].toString());
-
-        }
     }
 
-//        public static String[] addPerson() {
-//
-//            String[] beatles = {"Jon", "Paul", "Ringo"};
-//
-//            beatles = Arrays.copyOf(beatles, beatles.length + 1);
-//            beatles[beatles.length - 1] = "George";
-//
-//            for (int i = 0; i < beatles.length; i += 1) {
-//                System.out.println(beatles[i]);
-//
-//            }
-//            return beatles;
-//        }
+      static String[] addPerson(String[] person,String newPerson){
 
-//
+        person = Arrays.copyOf(person,person.length + 1);
+
+        person[person.length-1] = newPerson;
+
+        return person;
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
