@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FileIO {
     public static void main(String[] args) {
@@ -33,10 +35,27 @@ public class FileIO {
         path = Paths.get(path.toAbsolutePath().toString(),"test.txt");
         FileDirectoryUtil.tryCreateFile(path);
 
-         // Print out the final location of the file.
+         // Print out the final location of the file. // Before we Write
         System.out.println(path.toAbsolutePath());
-    }
 
 
+        // Try to write to the file. // After we Write.
+        IOutil.trywriteToFile(getContent(),path);
+
+        // try to print the contents of the file.
+        IOutil.tryPrintContents(path);
+
     }
+
+    public static List<String> getContent(){
+        List<String> contentToWrite = new ArrayList<String>();
+        contentToWrite.add("This is a new line!");
+        contentToWrite.add("Another line");
+        contentToWrite.add("You get the point");
+
+        return contentToWrite;
+    }
+
+    }
+
 

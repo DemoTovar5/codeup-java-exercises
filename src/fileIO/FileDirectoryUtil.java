@@ -7,6 +7,8 @@ import java.nio.file.Paths;
 
 public class FileDirectoryUtil {
 
+    // we are not using the greyed out "getPaths"
+
     public static Path getPath(String filename){
         return Paths.get(filename);
     }
