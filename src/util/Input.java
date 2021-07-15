@@ -16,7 +16,12 @@ public class Input {
 
     public int getInt() {
         System.out.println("Enter a integer");
-        return this.scanner.nextInt();
+        try{
+            return Integer.parseInt((getString()));
+        }catch (NumberFormatException e){
+            System.out.println("NaN");
+        }
+        return getInt();
     }
 
 
@@ -31,7 +36,7 @@ public class Input {
 
     public String getString() {
         String message = "hello";
-        return message;
+        return this.scanner.nextLine();
     }
 
     public boolean yesNo() {
@@ -60,7 +65,15 @@ public class Input {
 
     public double getDbl() {
         System.out.println("Choose a number: ");
-        double dbl = scanner.nextDouble();
-        return dbl;
+        try{
+            return Double.parseDouble(getString());
+        }catch (NumberFormatException e){
+            System.out.println("NaN");
+        }
+        return getDbl();
     }
+
+
+
+
 }
