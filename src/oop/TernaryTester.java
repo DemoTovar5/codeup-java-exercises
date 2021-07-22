@@ -8,12 +8,14 @@ public class TernaryTester {
         Scanner sc = new Scanner(System.in);
 
 //      myArr();
-        System.out.println("Enter your age: ");
-        int money = sc.nextInt();
-        System.out.println("Enter how much money you have: ");
-        int age = sc.nextInt();
+//        System.out.println("Enter your age: ");
+//        int money = sc.nextInt();
+//        System.out.println("Enter how much money you have: ");
+//        int age = sc.nextInt();
+//
+//        breaktheBank(age,money);
 
-        breaktheBank(age,money);
+primeNum();
     }
 
 //        System.out.println("Enter the size of the array: ");
@@ -35,7 +37,7 @@ public class TernaryTester {
 //
 //        System.out.println(Arrays.toString(myArray));
 
-    public static void myArr(){
+    public static void myArr() {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a sentence: ");
@@ -47,26 +49,40 @@ public class TernaryTester {
 
     }
 
-
-public static void breaktheBank(int money, int age){
-    if(money >= 200 &&  age >= 16){
-        System.out.println("Good to go buddy!");
-    } else{
-        throw new NumberFormatException("Get your age and/or money up!");
+    public static void primeNum() {
+        Scanner sc = new Scanner(System.in);
+        int i = 0;
+        int num = 0;
+        String primeNumbers = "";
+        System.out.println("Enter a number: ");
+        int n = sc.nextInt();
+        for (i = 1; i <= n; i++) {
+            int counter = 0;
+            for (num = i; num >= 1; num--) {
+                if (i % num == 0) {
+                    counter = counter + 1;
+                }
+            }
+            if (counter == 2) {
+                primeNumbers = primeNumbers + i + ", ";
+            }
+        }
+        System.out.println("Prime numbers are: ");
+        System.out.println(primeNumbers);
     }
 
-
-
-
-
 }
 
 
+//public static void breaktheBank(int money, int age){
+//    if(money >= 200 &&  age >= 16){
+//        System.out.println("Good to go buddy!");
+//    } else{
+//        throw new NumberFormatException("Get your age and/or money up!");
+//    }
 
 
 
-
-}
 
 //        String userInput = sc.nextLine();
 //
